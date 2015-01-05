@@ -1,0 +1,104 @@
+﻿<html>
+<head>
+<title>Ленинград в годы Великой Отечественной войны (1941–1945 гг.)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body background="background.jpg">
+<script type="text/javascript">
+answers = new Array;
+correct = [2,2,1,2];
+function onSelect(q, a) {answers[q-1] = a;}
+function onAnswer()
+{
+	document.test.results.value = "";
+	correctNum = 0;
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+		}
+		else
+		{
+			++correctNum;
+		}
+	}
+	document.test.results.value += "Всего правильных ответов: " + correctNum + "\n";
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+			document.test.results.value += "Неправильный ответ на вопрос номер " + (i+1) + "\n";
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:red;"
+		}
+		else
+		{
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:green;"
+		}
+	}
+}
+</script>
+<font size='+1'>
+<form name=test>
+<h4>Тестовое задание к разделу 3. ПЕТРОГРАД – ЛЕНИНГРАД советского времени (1917–1991 гг.) Тема 2. Ленинград в годы Великой Отечественной войны (1941–1945 гг.)</h4>
+<ol>
+
+<li>Укажите даты блокады Ленинграда фашисткой армией:</li>
+<ol>
+<label for="q1" id="1.1"><input type="radio" name="q1" value="1" onclick="onSelect(1, 1)"/> 8 сентября 1941 – 18 января 1943 г.</label><br>
+<label for="q1" id="1.2"><input type="radio" name="q1" value="2" onclick="onSelect(1, 2)"/> 8 сентября 1941 – 27 января 1944 г.</label><br>
+<label for="q1" id="1.3"><input type="radio" name="q1" value="3" onclick="onSelect(1, 3)"/> 22 июня 1941 – 9 мая 1945 г.</label><br>
+</ol>
+
+<li>Ее  называли «блокадной музой», «голосом Ленинграда». Ее голос часто звучал по ленинградскому радио, вселяя в людей надежду и уверенность. В память о ней названа одна из улиц нашего города, установлена мемориальная доска на доме, где она жила (ул. Рубинштейна, д. 7). Это</li>
+<ol>
+<label for="q2" id="2.1"><input type="radio" name="q2" value="1" onclick="onSelect(2, 1)"/> Т. Савичева</label><br>
+<label for="q2" id="2.2"><input type="radio" name="q2" value="2" onclick="onSelect(2, 2)"/> О. Берггольц</label><br>
+<label for="q2" id="2.3"><input type="radio" name="q2" value="3" onclick="onSelect(2, 3)"/> М. Алигер</label><br>
+<label for="q2" id="2.4"><input type="radio" name="q2" value="4" onclick="onSelect(2, 4)"/> А. Ахматова</label><br>
+</ol>
+
+<li>В нашем городе о блокаде Ленинграде напоминают музеи, мемориалы, памятники. Где был установлен первый монумент в память о погибших ленинградцах?</li>
+<ol>
+<label for="q3" id="3.1"><input type="radio" name="q3" value="1" onclick="onSelect(3, 1)"/> Пискаревское кладбище</label><br>
+<label for="q3" id="3.2"><input type="radio" name="q3" value="2" onclick="onSelect(3, 2)"/> Серафимовское кладбище</label><br>
+<label for="q3" id="3.3"><input type="radio" name="q3" value="3" onclick="onSelect(3, 3)"/> пл. Победы</label><br>
+<label for="q3" id="3.4"><input type="radio" name="q3" value="4" onclick="onSelect(3, 4)"/> пл. Восстания</label><br>
+</ol>
+
+<li>Какое название улицы не напоминает о ленинградцах, живших в городе во время блокады?</li>
+<ol>
+<label for="q4" id="4.1"><input type="radio" name="q4" value="1" onclick="onSelect(4, 1)"/> Площадь Мужества</label><br>
+<label for="q4" id="4.2"><input type="radio" name="q4" value="2" onclick="onSelect(4, 2)"/> Комсомольская площадь</label><br>
+<label for="q4" id="4.3"><input type="radio" name="q4" value="3" onclick="onSelect(4, 3)"/> Проспект Непокоренных</label><br>
+<label for="q4" id="4.3"><input type="radio" name="q4" value="3" onclick="onSelect(4, 3)"/> Улица Стойкости</label><br>
+</ol>
+
+<li>Укажите группу известных ленинградских композиторов:</li>
+<ol>
+<label for="q5" id="5.1"><input type="radio" name="q5" value="1" onclick="onSelect(5, 1)"/> Г. Е. Зиновьев, С. М. Киров, А. А. Жданов</label><br>
+<label for="q5" id="5.2"><input type="radio" name="q5" value="2" onclick="onSelect(5, 2)"/> Д.Д. Шостакович, И.О. Дунаевский</label><br>
+<label for="q5" id="5.3"><input type="radio" name="q5" value="3" onclick="onSelect(5, 3)"/> А. Я. Ваганова,  Н. М. Дудинская, Г. И. Уланова</label><br>
+</ol>
+
+<li>Согласны ли вы с мнением, что промышленность социалистического Ленинграда полностью базировалась на дореволюционных предприятиях.</li>
+<ol>
+<label for="q6" id="6.1"><input type="radio" name="q6" value="1" onclick="onSelect(6, 1)"/> Да</label><br>
+<label for="q6" id="6.2"><input type="radio" name="q6" value="2" onclick="onSelect(6, 2)"/> Нет</label><br>
+</ol>
+
+<li>Укажите неправильное утверждение:</li>
+<ol>
+<label for="q7" id="7.1"><input type="radio" name="q7" value="1" onclick="onSelect(7, 1)"/> все ленинградские дома были обеспечены водопроводом, канализацией, газом, горячей водой</label><br>
+<label for="q7" id="7.2"><input type="radio" name="q7" value="2" onclick="onSelect(7, 2)"/> общественным транспортом были извозчики, автобусы, троллейбусы, трамваи, а также первые такси</label><br>
+<label for="q7" id="7.3"><input type="radio" name="q7" value="3" onclick="onSelect(7, 3)"/> не все городские улицы были покрыты асфальтом</label><br>
+<label for="q7" id="7.4"><input type="radio" name="q7" value="4" onclick="onSelect(7, 4)"/> впервые на улицах города появились светофоры, громкоговорители (радио) и телефонные будки.</label><br>
+</ol>
+
+
+</ol>
+<input type="button" value="Ответить" onclick="onAnswer()"/><br><br>
+<textarea cols=50 rows=8 name="results"></textarea>
+</form>
+</font>
+</body>
+</html>

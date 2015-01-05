@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+<title>«Великий город с областной судьбой» (1945–1991 гг.)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body background="background.jpg">
+<script type="text/javascript">
+answers = new Array;
+correct = [1,2,2,3,1,1,100,3];
+function onSelect(q, a) {answers[q-1] = a;}
+function onAnswer()
+{
+	document.test.results.value = "";
+	correctNum = 0;
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+		}
+		else
+		{
+			++correctNum;
+		}
+	}
+	document.test.results.value += "Всего правильных ответов: " + correctNum + "\n";
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+			document.test.results.value += "Неправильный ответ на вопрос номер " + (i+1) + "\n";
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:red;"
+		}
+		else
+		{
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:green;"
+		}
+	}
+}
+</script>
+<font size='+1'>
+<form name=test>
+<h4>Тестовое задание к разделу 3. ПЕТРОГРАД – ЛЕНИНГРАД советского времени (1917–1991 гг.) Тема 3. «Великий город с областной судьбой» (1945–1991 гг.)</h4>
+<ol>
+
+<li>С каким из мнений вы согласны?</li>
+<ol>
+<label for="q1" id="1.1"><input type="radio" name="q1" value="1" onclick="onSelect(1, 1)"/> Восстановление Ленинграда осуществлялось, в основном, силами ленинградцев и было еще одним их подвигом</label><br>
+<label for="q1" id="1.2"><input type="radio" name="q1" value="2" onclick="onSelect(1, 2)"/> Восстановление Ленинграда осуществлялось с помощью всего Советского Союза и стран-союзников в годы Великой Отечественной войны</label><br>
+</ol>
+
+<li>Какое здание свидетельствует о том, что Ленинград превратился в важнейший промышленный центр государства?</li>
+<ol>
+<label for="q2" id="2.1"><input type="radio" name="q2" value="1" onclick="onSelect(2, 1)"/> БКЗ «Октябрьский»</label><br>
+<label for="q2" id="2.2"><input type="radio" name="q2" value="2" onclick="onSelect(2, 2)"/> промышленное предприятие (новые корпуса Свердлова? Кирова?)</label><br>
+<label for="q2" id="2.3"><input type="radio" name="q2" value="3" onclick="onSelect(2, 3)"/> морской порт</label><br>
+<label for="q2" id="2.4"><input type="radio" name="q2" value="4" onclick="onSelect(2, 4)"/> ТЮЗ</label><br>
+</ol>
+
+<li>Какие сооружения напоминают о том, что Ленинград был крупным торговым центром?</li>
+<ol>
+<label for="q3" id="3.1"><input type="radio" name="q3" value="1" onclick="onSelect(3, 1)"/> БКЗ «Октябрьский»</label><br>
+<label for="q3" id="3.2"><input type="radio" name="q3" value="2" onclick="onSelect(3, 2)"/> промышленное предприятие (новые корпуса Свердлова? Кирова?)</label><br>
+<label for="q3" id="3.3"><input type="radio" name="q3" value="3" onclick="onSelect(3, 3)"/> сортировочная</label><br>
+<label for="q3" id="3.4"><input type="radio" name="q3" value="4" onclick="onSelect(3, 4)"/> ТЮЗ</label><br>
+</ol>
+
+<li>Какое здание свидетельствуют о том, что Ленинград сохранял значение центра художественной культуры?</li>
+<ol>
+<label for="q4" id="4.1"><input type="radio" name="q4" value="1" onclick="onSelect(4, 1)"/> БКЗ «Октябрьский»</label><br>
+<label for="q4" id="4.2"><input type="radio" name="q4" value="2" onclick="onSelect(4, 2)"/> промышленное предприятие (новые корпуса Свердлова? Кирова?)</label><br>
+<label for="q4" id="4.3"><input type="radio" name="q4" value="3" onclick="onSelect(4, 3)"/> Пулковский аэропорт</label><br>
+<label for="q4" id="4.4"><input type="radio" name="q4" value="4" onclick="onSelect(4, 4)"/> стадион Петровский</label><br>
+</ol>
+
+<li>Какое здание напоминает о том, что Ленинград был центром образования?</li>
+<ol>
+<label for="q4" id="4.1"><input type="radio" name="q4" value="1" onclick="onSelect(4, 1)"/> типовое здание школы</label><br>
+<label for="q4" id="4.2"><input type="radio" name="q4" value="2" onclick="onSelect(4, 2)"/> промышленное предприятие (новые корпуса Свердлова? Кирова?)</label><br>
+<label for="q4" id="4.3"><input type="radio" name="q4" value="3" onclick="onSelect(4, 3)"/> Пулковский аэропорт</label><br>
+<label for="q4" id="4.4"><input type="radio" name="q4" value="4" onclick="onSelect(4, 4)"/> стадион Петровский</label><br>
+</ol>
+
+<li>В послевоенном Ленинграде появились новые центры просвещения. Укажите лишнее.</li>
+<ol>
+<label for="q6" id="6.1"><input type="radio" name="q6" value="1" onclick="onSelect(6, 1)"/> Музей истории города</label><br>
+<label for="q6" id="6.2"><input type="radio" name="q6" value="2" onclick="onSelect(6, 2)"/> музей железнодорожного транспорта</label><br>
+<label for="q6" id="6.3"><input type="radio" name="q6" value="3" onclick="onSelect(6, 3)"/> музей космонавтики и ракетной техники</label><br>
+<label for="q6" id="6.4"><input type="radio" name="q6" value="4" onclick="onSelect(6, 4)"/> лекторий</label><br>
+<label for="q6" id="6.5"><input type="radio" name="q6" value="5" onclick="onSelect(6, 5)"/> Планетарий</label><br>
+</ol>
+
+<li>В Ленинграде устанавливали памятники в честь конкретных людей, событий. Один из известнейших ленинградских скульпторов, почетный гражданин нашего города, создал памятники, получившие всемирное признание. Укажите фамилию скульптора.</li>
+<ol>
+<label for="q7" id="7.1"><input type="radio" name="q7" value="1" onclick="onSelect(7, 1)"/> М. Антокольский</label><br>
+<label for="q7" id="7.2"><input type="radio" name="q7" value="2" onclick="onSelect(7, 2)"/> В. В. Лишев</label><br>
+<label for="q7" id="7.3"><input type="radio" name="q7" value="3" onclick="onSelect(7, 3)"/> М. К. Аникушин</label><br>
+<label for="q7" id="7.4"><input type="radio" name="q7" value="4" onclick="onSelect(7, 4)"/> М. Г. Манизер</label><br>
+</ol>
+
+
+</ol>
+<input type="button" value="Ответить" onclick="onAnswer()"/><br><br>
+<textarea cols=50 rows=8 name="results"></textarea>
+</form>
+</font>
+</body>
+</html>

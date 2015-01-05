@@ -1,0 +1,109 @@
+﻿<html>
+<head>
+<title>Санкт-Петербург после Петра I (1725–1781)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body background="background.jpg">
+<script type="text/javascript">
+answers = new Array;
+correct = [2,1,2,3,4,3,2];
+function onSelect(q, a) {answers[q-1] = a;}
+function onAnswer()
+{
+	document.test.results.value = "";
+	correctNum = 0;
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+		}
+		else
+		{
+			++correctNum;
+		}
+	}
+	document.test.results.value += "Всего правильных ответов: " + correctNum + "\n";
+	for(var i=0; i<correct.length; ++i)
+	{
+		if(answers[i] != correct[i])
+		{
+			document.test.results.value += "Неправильный ответ на вопрос номер " + (i+1) + "\n";
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:red;"
+		}
+		else
+		{
+			document.getElementById((i+1) + '.' + correct[i]).style.cssText = "color:green;"
+		}
+	}
+}
+</script>
+<font size='+1'>
+<form name=test>
+<h4>Тестовое задание к разделу 2. САНКТ-ПЕТЕРБУРГ – ИМПЕРСКАЯ СТОЛИЦА. Тема 2. Санкт-Петербург после Петра I (1725–1781).</h4>
+<ol>
+
+<li>Укажите, кто из царствующих особ перевел столицу из Петербурга в Москву?</li>
+<ol>
+<label for="q1" id="1.1"><input type="radio" name="q1" value="1" onclick="onSelect(1, 1)"/> Анна Иоанновна</label><br>
+<label for="q1" id="1.2"><input type="radio" name="q1" value="2" onclick="onSelect(1, 2)"/> Петр II</label><br>
+<label for="q1" id="1.3"><input type="radio" name="q1" value="3" onclick="onSelect(1, 3)"/> Елизавета Петровна</label><br>
+<label for="q1" id="1.4"><input type="radio" name="q1" value="4" onclick="onSelect(1, 4)"/> Екатерина II</label><br>
+</ol>
+
+<li>Укажите, кто из царствующих особ, вернул столицу из Москвы в Петербург?</li>
+<ol>
+<label for="q2" id="2.1"><input type="radio" name="q2" value="1" onclick="onSelect(2, 1)"/> Анна Иоанновна</label><br>
+<label for="q2" id="2.2"><input type="radio" name="q2" value="2" onclick="onSelect(2, 2)"/> Петр II</label><br>
+<label for="q2" id="2.3"><input type="radio" name="q2" value="3" onclick="onSelect(2, 3)"/> Елизавета Петровна</label><br>
+<label for="q2" id="2.4"><input type="radio" name="q2" value="4" onclick="onSelect(2, 4)"/> Екатерина II</label><br>
+</ol>
+
+<li>В конце ХVIII в. южная граница Санкт-Петербурга проходила</li>
+<ol>
+<label for="q3" id="3.1"><input type="radio" name="q3" value="1" onclick="onSelect(3, 1)"/> по реке Мойке</label><br>
+<label for="q3" id="3.2"><input type="radio" name="q3" value="2" onclick="onSelect(3, 2)"/> по реке Фонтанке</label><br>
+<label for="q3" id="3.3"><input type="radio" name="q3" value="3" onclick="onSelect(3, 3)"/> по Обводному каналу</label><br>
+<label for="q3" id="3.4"><input type="radio" name="q3" value="4" onclick="onSelect(3, 4)"/> по Загородному проспекту</label><br>
+</ol>
+
+<li>Укажите сооружение, напоминающее о том, что Санкт-Петербург был центром художественной культуры России:</li>
+<ol>
+<label for="q4" id="4.1"><input type="radio" name="q4" value="1" onclick="onSelect(4, 1)"/> Зимний дворец</label><br>
+<label for="q4" id="4.2"><input type="radio" name="q4" value="2" onclick="onSelect(4, 2)"/> Строгановский дворец</label><br>
+<label for="q4" id="4.3"><input type="radio" name="q4" value="3" onclick="onSelect(4, 3)"/> Академия художеств</label><br>
+<label for="q4" id="4.4"><input type="radio" name="q4" value="4" onclick="onSelect(4, 4)"/> Михайловский дворец</label><br>
+<label for="q4" id="4.5"><input type="radio" name="q4" value="5" onclick="onSelect(4, 5)"/> Кунсткамера</label><br>
+</ol>
+
+<li>Определите здание, построенное в стиле классицизма:</li>
+<ol>
+<label for="q5" id="5.1"><input type="radio" name="q5" value="1" onclick="onSelect(5, 1)"/> Смольный собор</label><br>
+<label for="q5" id="5.2"><input type="radio" name="q5" value="2" onclick="onSelect(5, 2)"/> Шереметевский дворец</label><br>
+<label for="q5" id="5.3"><input type="radio" name="q5" value="3" onclick="onSelect(5, 3)"/> Меншиковский дворец</label><br>
+<label for="q5" id="5.4"><input type="radio" name="q5" value="4" onclick="onSelect(5, 4)"/> Здание Академии наук</label><br>
+</ol>
+
+<li>Петербуржец, создавший галерею скульптурных портретов своих современников, находящихся в Русском музее. Бюст скульптора установлен в Михайловском саду.</li>
+<ol>
+<label for="q6" id="6.1"><input type="radio" name="q6" value="1" onclick="onSelect(6, 1)"/> Г. Державин</label><br>
+<label for="q6" id="6.2"><input type="radio" name="q6" value="2" onclick="onSelect(6, 2)"/> Э. Фальконе</label><br>
+<label for="q6" id="6.3"><input type="radio" name="q6" value="3" onclick="onSelect(6, 3)"/> Ф. Шубин</label><br>
+<label for="q6" id="6.4"><input type="radio" name="q6" value="4" onclick="onSelect(6, 4)"/> К.Б. Растрелли</label><br>
+</ol>
+
+<li>Этот музей, созданный при Екатерине II, вы можете посетить в наши дни:</li>
+<ol>
+<label for="q7" id="7.1"><input type="radio" name="q7" value="1" onclick="onSelect(7, 1)"/> Кунсткамера</label><br>
+<label for="q7" id="7.2"><input type="radio" name="q7" value="2" onclick="onSelect(7, 2)"/> Эрмитаж</label><br>
+<label for="q7" id="7.3"><input type="radio" name="q7" value="3" onclick="onSelect(7, 3)"/> военно-морской музей</label><br>
+<label for="q7" id="7.4"><input type="radio" name="q7" value="4" onclick="onSelect(7, 4)"/> Артиллерийский музей</label><br>
+</ol>
+
+
+</ol>
+<input type="button" value="Ответить" onclick="onAnswer()"/><br><br>
+<textarea cols=50 rows=8 name="results"></textarea>
+</form>
+</font>
+</body>
+</html>
